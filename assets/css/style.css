@@ -39,6 +39,9 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 99%);
   --black: hsl(0, 0%, 0%);
+  --teal-green : #128c7e;
+  --light-green :#25d366;
+  --blue-yamaha :#2C388C;
 
   /**
    * typography
@@ -89,6 +92,7 @@
   --gradient-4: linear-gradient(to right, var(--ultramarine), var(--blue-violet));
   --gradient-5: linear-gradient(to right, var(--persian-green), var(--spring-green));
   --gradient-6: linear-gradient(to right, var(--spanish-orange), var(--gold-web-golden));
+  --gradient-wa:linear-gradient(to right, var(--teal-green), var(--light-green));
 
   /**
    * transition
@@ -205,6 +209,8 @@ body {
 
 .btn-secondary { background-image: var(--gradient-2); }
 
+.btn-wa { background-image: var(--gradient-wa); }
+
 .btn-link {
   display: flex;
   align-items: center;
@@ -298,7 +304,7 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--winter-sky); }
+.navbar-link:is(:hover, :focus) { color: var(--blue-yamaha); }
 
 
 
