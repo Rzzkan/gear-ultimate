@@ -93,6 +93,7 @@
   --gradient-5: linear-gradient(to right, var(--persian-green), var(--spring-green));
   --gradient-6: linear-gradient(to right, var(--spanish-orange), var(--gold-web-golden));
   --gradient-wa:linear-gradient(to right, var(--teal-green), var(--light-green));
+  --gradient-yamaha:linear-gradient(to right, var(--blue-yamaha), var(--blue-violet));
 
   /**
    * transition
@@ -138,6 +139,16 @@ ion-icon { display: block; }
 
 img { height: auto; }
 
+.img-rounded {
+  .rounded-image {
+    width : 100px;
+    height: 100px;
+    border-radius: 50%;
+   overflow: hidden; 
+   object-position: center; 
+  }
+}
+
 input,
 button {
   background: none;
@@ -178,6 +189,7 @@ body {
 .section { padding-block: var(--section-padding); }
 
 .w-100 { width: 100%; }
+.w-50 { width: 50%; }
 
 .h1,
 .h2,
@@ -429,7 +441,7 @@ body {
 
 .features-banner {
   max-width: max-content;
-  background-color: var(--light-gray);
+ 
   border-radius: var(--radius-12);
   overflow: hidden;
 }
@@ -467,13 +479,13 @@ body {
   border-radius: var(--radius-12);
 }
 
-.about-card-1 { background-image: var(--gradient-3); }
+.about-card-1 { background-image: var(--gradient-yamaha); }
 
-.about-card-2 { background-image: var(--gradient-4); }
+.about-card-2 { background-image: var(--gradient-yamaha); }
 
-.about-card-3 { background-image: var(--gradient-5); }
+.about-card-3 { background-image: var(--gradient-yamaha); }
 
-.about-card-4 { background-image: var(--gradient-6); }
+.about-card-4 { background-image: var(--gradient-yamaha); }
 
 .about-card .card-banner {
   min-width: 150px;
@@ -681,7 +693,7 @@ body {
   opacity: 0;
 }
 
-.footer-link:is(:hover, :focus) { color: var(--ultramarine); }
+.footer-link:is(:hover, :focus) { color: var(--blue-yamaha); }
 
 .footer-link:is(:hover, :focus)::after { opacity: 1; }
 
@@ -699,7 +711,7 @@ body {
   transition: var(--transition-1);
 }
 
-.footer-item-link:is(:hover, :focus) { color: var(--ultramarine); }
+.footer-item-link:is(:hover, :focus) { color: var(--blue-yamaha); }
 
 .footer-bottom {
   padding-block: 25px;
@@ -711,14 +723,14 @@ body {
 
 .copyright .span {
   display: inline-block;
-  color: var(--winter-sky);
+  color: var(--blue-yamaha);
   font-weight: var(--fw-500);
 }
 
 .copyright-link {
   display: inline-block;
   font-weight: var(--fw-600);
-  background-image: var(--gradient-3);
+  background-image: var(--gradient-yamaha);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
